@@ -1,0 +1,40 @@
+[
+    {
+        "@context": "https://w3id.org/did/v1",
+        "id": "did:rcw:13ff64fe-5bae-42c7-b515-fc6c88a65eb8",
+        "alsoKnownAs": [
+            "did.test@gmail.com.test"
+        ],
+        "service": [
+            {
+                "id": "IdentityHub",
+                "type": "IdentityHub",
+                "serviceEndpoint": {
+                    "@context": "schema.identity.foundation/hub",
+                    "@type": "UserServiceEndpoint",
+                    "instance": [
+                        "did:test:hub.id"
+                    ]
+                }
+            }
+        ],
+        "verificationMethod": [
+            {
+                "id": "did:rcw:13ff64fe-5bae-42c7-b515-fc6c88a65eb8#key-0",
+                "type": "JsonWebKey2020",
+                "publicKeyJwk": {
+                    "kty": "OKP",
+                    "crv": "Ed25519",
+                    "x": "RgkBvNCh4sdJjMQ6na7Zm4GHqFQKYf6oKhwcTzd2GVM"
+                },
+                "controller": "did:rcw:13ff64fe-5bae-42c7-b515-fc6c88a65eb8"
+            }
+        ],
+        "authentication": [
+            "did:rcw:13ff64fe-5bae-42c7-b515-fc6c88a65eb8#key-0"
+        ],
+        "assertionMethod": [
+            "did:rcw:13ff64fe-5bae-42c7-b515-fc6c88a65eb8#key-0"
+        ]
+    }
+]
